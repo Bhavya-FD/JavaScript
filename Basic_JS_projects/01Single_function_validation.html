@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Function Validation</title>
+    <style>
+        .form{
+            width: 70%;
+            font-size: 30px;
+            background: maroon ;
+            color: antiquewhite;
+            margin: 80px auto;
+            text-align: left;
+            padding: 40px;
+            border: 5px ridge rgb(80, 0, 0);
+            box-shadow: maroon 0 0 30px;
+        }
+        input{
+            font-size: 20px;
+            color: maroon;
+            background-color: rgba(127, 255, 212, 0.885);
+        }
+    </style>
 </head>
 <body>
+    <div class="form">
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" onblur="handleevent(this, 'error1' ,'User Name')">
     <span id="error1"></span>
@@ -21,7 +40,7 @@
     <label for="useremail">User Email:</label>
     <input type="text" name="useremail" id="useremail" onblur="handleevent(this, 'error4' , 'User Email')">
     <span id="error4"></span>
-    
+    </div>
 
     <script>
         //here we are using parameteres
