@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+        .calc{
+            width: 42%;
+            margin: 50px auto;
+            border: 10px inset rgb(110, 110, 110);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            background: linear-gradient(90deg,rgb(41, 200, 176),rgb(136, 130, 130));
+        }
+        input{
+            font-size: 20px;
+        }
+        button{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            padding: 10px 20px;
+            color: wheat;
+            background: linear-gradient(rgba(255, 0, 191, 0.87) ,rgba(0, 0, 0, 0.613) );
+            box-shadow: 2px 2px 2px black;
+        }
+        span{
+            padding: 10px 100px;
+            background: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Math Operations</h2>
+    <div class="calc">
+    <label for="num1">Enter 1st Number:</label>
+    <input type="number" name="num1" id="num1"><br><br>
+    <label for="num2">Enter 2nd Number:</label>
+    <input type="number" name="num2" id="num2"><br><br>
+
+    <button id="btn1" onclick="Addition()">+</button>
+    <button id="btn2" onclick="Subtraction()">-</button>
+    <button id="btn3" onclick="Multiply()">*</button>
+    <button id="btn4" onclick="Divide()">/</button>
+    <button id="btn5" onclick="Percentage()">%</button><br><br>
+    <span id="spnid"></span><br><br>
+</div>
+
+    <script>
+        
+        function Addition(){
+            let num1 = document.getElementById('num1').value
+            let num2 = document.getElementById('num2').value
+            let a = parseInt(num1) + parseInt(num2);                //parseint changes the value to integer
+            // let a = number(num1) + number(num2);                 //number function does the same
+            document.getElementById('spnid').innerText = "Answer is: " + a;
+        }
+        function Subtraction(){
+            let num1 = document.getElementById('num1').value
+            let num2 = document.getElementById('num2').value
+            let b = num1 - num2;
+            document.getElementById('spnid').innerText = "Answer is : " + b;
+        }
+        function Multiply(){
+            let num1 = document.getElementById('num1').value
+            let num2 = document.getElementById('num2').value
+            let c = num1 * num2;
+            document.getElementById('spnid').innerText = "Answer is: " + c;
+        }
+        function Divide(){
+            let num1 = document.getElementById('num1').value
+            let num2 = document.getElementById('num2').value
+            let d = num1 / num2;
+            document.getElementById('spnid').innerText = "Answer is: " + d;
+        }
+        function Percentage(){
+            let num1 = document.getElementById('num1').value
+            let num2 = document.getElementById('num2').value
+            let e = parseInt(num1) + parseInt(num2)/2;
+            document.getElementById('spnid').innerText = "Answer is: " + e + '%';
+        }
+
+    </script>
+</body>
+</html>

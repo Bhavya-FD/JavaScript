@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet for Information Technology</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-family:fantasy;
+            letter-spacing: 2px;
+            font-size: 40px;
+            font-weight: 800;
+            color:rgb(111, 6, 6);
+            text-shadow: -3px -3px 2px rgb(115, 113, 113);
+        }
+        .container{
+            border: 5px ridge rgb(54, 54, 229);
+            outline: 5px ridge rgb(10, 10, 114);
+            margin: 0 auto;
+            width: 50%;
+            padding: 28px 100px;
+            font-size: 25px;
+            background: linear-gradient(120deg,pink,rgba(0, 0, 0, 0.478),pink,rgba(0, 0, 0, 0.469),pink,rgba(0, 0, 0, 0.459),pink);
+        }
+        li{
+            padding: 12px;
+            font-weight: 700;
+        }
+        input{
+            font-size: 20px;
+            margin: 12px;
+        }
+        #btn{
+            font-size: 25px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            color: rgb(224, 226, 228);
+            margin-top: 50px;
+            margin-left: 0;
+            outline: 5px solid rgb(38, 39, 38);
+            background: linear-gradient(rgb(227, 3, 3),rgb(66, 65, 65));
+        }
+        .marksheet{
+            display: flex;
+            justify-content:space-between;
+        }
+        span{
+            border: 2px solid black;
+            font-size: 25px;
+            padding: 10px 50px;
+            color: rgb(250, 231, 195);
+            background: grey;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Marksheet for <br> Information Technology</h1>
+
+    <div class="container">
+    <div class="marksheet">
+    <ol>
+        <li><label for="C">C Language</label></li>
+        <li><label for="C++">C++ Language</label></li>
+        <li><label for="Database">Database</label></li>
+        <li><label for="HTML">HTML</label></li>
+        <li><label for="CSS">CSS</label></li>
+        <li><label for="php">php</label></li>
+        <li><label for="Core java">Core java</label></li>
+    </ol>
+
+    <div class="input">
+        <input type="number" name="C" id="C"><br>
+        <input type="number" name="C++" id="C+"><br>
+        <input type="number" name="Database" id="Database"><br>
+        <input type="number" name="html" id="html"><br>
+        <input type="number" name="CSS" id="CSS"><br>
+        <input type="number" name="php" id="php"><br>
+        <input type="number" name="java" id="java"><br>
+    </div>
+    </div>
+
+    <input type="button" value="Result" id="btn" onclick="sumtotal()">
+
+    <span id="spnid">Answer is :</span>
+
+    </div>
+
+
+    <script>
+        function sumtotal(){
+            let a = document.getElementById('C').value;
+            let b = document.getElementById('C+').value;
+            let c = document.getElementById('Database').value;
+            let d = document.getElementById('html').value;
+            let e = document.getElementById('CSS').value;
+            let f = document.getElementById('php').value;
+            let g = document.getElementById('java').value;
+
+            let sum = Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g);
+
+            document.getElementById('spnid').innerText = "Answer is : " + sum;
+
+        }
+    </script>
+
+</body>
+</html>

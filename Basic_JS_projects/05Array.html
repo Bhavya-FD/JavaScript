@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change by Array in JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(47, 47, 47);
+            width: 100%;
+            height: 100vh;
+            padding-top: 50px;
+        }
+        #bigbox{
+            border: 10px outset black;
+            border-radius: 200px;
+            width: 60%;
+            height: 60vh;
+            margin: 0px auto;
+            box-shadow: 6px 6px 4px rgb(103, 97, 97);
+            background: rgb(156, 79, 228);
+            text-align: center;
+            font-size: 70px;
+            padding-top: 100px;
+            font-weight: 900;
+            text-shadow: 4px 4px 3px rgb(60, 60, 62);
+        }
+        #box{
+            border: 5px dashed rgb(8, 13, 100);
+            background: rgb(120, 204, 225);
+            border-radius: 10px;
+            margin: 50px auto;
+            color: rgb(8, 51, 89);
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="bigbox"><p id="p">*WELCOME*</p></div>
+    <div id="box" onclick="changeColor()">Click Me to Start!</div>
+    </div>
+
+    
+    <script>
+        let i = 0;
+        let color = ['red', 'yellow','blue', 'orange' , 'green', 'gray' , 'pink' , ''];
+
+
+        function changeColor(){
+            // document.getElementById('bigbox').style.background = color[0];
+            document.getElementById('bigbox').style.background = color[i];
+            i++;
+            if(i>=color.length){
+                i=0;                         // starts i from 0 if it exceeds colors length and array ends
+            }
+
+            // Display and remove Welcome
+            if (i == 1) {
+                document.getElementById('p').style.display = 'none';
+            }else if(i == 0){
+                document.getElementById('p').style.display = 'block';
+            }
+
+            // to get confirm if ok than continue else it will starts over 
+            if (i == 4) {
+                let a = confirm('Do You want to Continue?');
+                if (a == true) {
+                    i++;
+                } else {
+                    i=0;
+                }
+            }
+
+            // to alert of array ending
+            if (i == 7) {
+                alert('The Array Ends here!');
+            }
+        }
+
+	</script>
+</body>
+</html>
