@@ -7,12 +7,15 @@
 div[class*='box']{
     border: 1px solid rgb(203, 201, 201);
     width: 25%;
-    padding: 15px;
-    margin: 10px auto;
+    padding: 10px;
+    margin: 8px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
+}
+.container{
+    margin-top: 50px;
 }
 .box2>p{
     font-size: 14px;
@@ -20,10 +23,9 @@ div[class*='box']{
 }
 .box1>img{
     width: 60%;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 .box1>p{
-    padding-bottom: 20px;
     font-size: 14px;
 }
 #username,#password{
@@ -32,9 +34,9 @@ div[class*='box']{
     background: rgba(233, 231, 231, 0.353);
     border: 1px solid  rgb(224, 222, 222);
     font-size: 12px;
+    position: relative;
 }
 #btn{
-    /* width: 80%; */
     background-color: #508bf2;
     padding:9px 110px;
     border-radius: 10px;
@@ -61,7 +63,6 @@ hr{
     display: flex;
     align-items: center ;
     gap: 10px;
-    padding-bottom: 15px;
 }
 .apps{
     width: 25%;
@@ -82,5 +83,11 @@ hr{
 }
 .showpass{
     color: rgb(151, 2, 32);
-    font-size: 15px;
+    font-size: 13px;
+}
+
+input:focus::placeholder{
+    position: absolute;
+    font-size: 11px;
+    transform: translatey(-10px);
 }
