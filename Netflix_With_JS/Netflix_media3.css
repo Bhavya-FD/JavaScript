@@ -1,0 +1,131 @@
+@media (max-width:576px) {
+    
+    /* header starts here */
+    .container{
+        height: 500px;
+        overflow-x: hidden;
+    }
+    nav{
+        gap: 75px;
+    }
+    #language{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    /* black box section1 starts here */
+    .black1{
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        padding-top: 0;
+        overflow-x: hidden;
+    }
+    .para{
+        margin-top: 0px;
+    }
+    #tv{
+        height: 350px;
+        width: 380px;
+    }
+    video{
+        width:277px;
+        height:172px;
+        margin-top: 85px;
+        margin-left: 50px;
+    }
+
+    /* black box section2 starts here */
+    .black2{
+        height: 550px;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .mobile{
+        height: 300px;
+        width:200px;
+        margin-left: 0px;
+    }
+    .show p{
+        display: none;
+    }
+
+    /* black box section3 starts here */
+    .black3{
+        height: 470px;
+    }
+    .black3 h1{
+        top: 320px;
+        left: 120px;
+    }
+    .black3 p{
+        top: 370px;
+        left: 120px;
+    }
+    #rajma{
+        top: 0;
+        right: -85px;
+    }
+    #chawal {
+        top: 0;
+        right: 150px;
+    }
+
+    /* black box section4 starts here */
+
+    .black4{
+        overflow-x: hidden;
+        height: 510px;
+    }
+    .black4 h1{
+        top: 390px;
+        right: 120px;
+    }
+    .black4 p{
+        display: none;
+    }
+    .children{
+        position: absolute;
+        top: 0px;
+        right: -280px;
+    }
+
+    /* black box section5 starts here */
+    .black5{
+        gap: 3px;
+    }
+    .black5 h1{
+        font-size: 30px;
+    }
+    div[class*=net]{
+        font-size: 18px;
+        padding: 15px;
+    }
+    div[class*=answer]{
+        font-size: 17px;
+        padding: 15px;
+    }
+    i[class*=plus]{
+        font-size: 20px;
+    }
+    .get{
+        height: 47px;
+        font-size: 20px;
+        margin-top: 22px;
+    }
+
+    /* footer starts here */
+
+    .black6{
+        font-size: 13px;
+        gap: 25px;
+    }
+    div[class*=line]{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+}

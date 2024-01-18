@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header starts here */
+.container{
+    height: 700px;
+    width: 100%;
+    background-image:radial-gradient(rgba(255, 255, 255, 0.034), rgba(0, 0, 0, 0.938)), url(../Netflix/Image/Headerbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    border: 1px hidden black;
+    background-color:transparent;
+    display: flex;
+    gap: 200px;
+}
+.btnSlideToggle{
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 30px;
+}
+.menu{
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border:5px ridge rgb(100, 22, 0);
+    color: aliceblue;
+    padding:20px 50px;
+    line-height: 60px;
+    font-size: 30px;
+    background: rgba(155, 154, 154, 0.791);
+    cursor: pointer;
+    display: none;
+}
+ul{
+    list-style-type: none;
+}
+.li1:hover{
+    background: wheat;
+    color: black;
+}
+.li2:hover{
+    background: red;
+    color: rgb(245, 199, 199);
+}
+.li3:hover{
+    background: rgb(2, 2, 138);
+    color: skyblue;
+}
+.li4:hover{
+    background:purple;
+    color: pink;
+}
+.li5:hover{
+    background: black;
+    color: aliceblue;
+}
+img{
+    padding-bottom:10px;
+    padding-right: 20px;
+    margin-left: 120px;
+    margin-top: 5px;
+    height: 80px;
+    width: 220px;
+}
+#language:hover{
+    outline: 2px solid white;
+}
+#language{
+    height: 30px;
+    width: 120px;
+    background-color:transparent;            
+    border: 1px solid white;
+    font-weight: 800;
+    border-radius: 5px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+option{
+    background-color: aliceblue;
+}
+button{
+    height: 35px;
+    width: 70px;
+    color: aliceblue;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 20px;  
+}
+.content{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 170px;
+    margin-left: 30px;
+}
+.p{
+    font-size:48px;
+    font-weight:800;
+}
+h2{
+    font-size: 25px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+h3{
+    font-size: larger;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 53px;
+    width: 350px;
+    border: 1px solid rgb(153, 151, 151);
+    margin-top: 27px;
+    background-color: rgba(213, 210, 210, 0.168);
+    font-size: larger;
+    color:rgb(0, 0, 0);
+    font-weight: 800;
+    margin-left: 40px;
+    padding-left: 30px;
+    border-radius:10px;
+}
+.get{
+    height: 54px;
+    width: 200px;
+    background-color: rgb(240, 3, 3);
+    color: aliceblue;
+    font-size: x-large;
+    border-radius: 10px;
+    margin-top: 27px;
+    
+}
+.hr{
+    height: 8px;
+    width: 100%;
+    border: 1px hidden gray;
+    background-color: rgb(36, 36, 36);
+}
+
+/* black box section1 starts here */
+.black1{
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: aliceblue;
+}
+.para{
+    margin-top: 130px;
+}
+h1{
+    font-size: 45px;
+    font-weight:800;
+    padding-bottom: 20px;
+}
+.para p{
+    font-size: 23px;
+    line-height: 30px;
+}
+#tv{
+    background:url(../Netflix/Image/tv.png) no-repeat right/contain;
+    height: 400px;
+    width: 500px;
+}
+video{
+    width:370px;
+    height:205px;
+    margin-top: 90px;
+    margin-left: 63px;
+}
+
+/* black box section2 starts here */
+.black2{
+    width: 100%;
+    height: 520px;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    gap: 130px;
+}
+.mobile{
+    background: url(../Netflix/Image/mobile-1.jpg) no-repeat center center/cover; 
+    height: 400px;
+    width:300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.stranger{
+    height: 90px;
+    width: 280px;
+    border: 1px solid gray;
+    background-color: black;
+    margin-top: 275px;
+    margin-left: 10px;
+    padding-left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content:end;
+    overflow: hidden;
+    gap: 15px;
+}
+.boxshot{
+    width: 100px;
+    height: 85px;
+}
+h6{
+    margin-top: 15px;
+    font-size: 13px;
+    color: aliceblue;
+}
+h6 p{
+    color: blue;
+}
+.download{
+    height: 65px;
+    width: 65px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+/* black box section3 starts here */
+.black3{
+    width: 100%;
+    height: 520px;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    gap: 200px;
+    justify-content:space-evenly;
+    padding-right: 200px;
+    position: relative;
+}
+.watch{
+    margin-top: 190px;
+}
+.black3 p{
+    font-size: 25px;
+}
+#rajma{
+    height: 400px;
+    width: 550px;
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    z-index: 2;
+}
+#chawal {
+    margin-top: 40px;
+    height: 300px;
+    width: 331px;
+    overflow: hidden;
+    position: absolute;
+    right: 188px;
+    top: 42px;
+    z-index: 1;
+}
+
+/* black box section4 starts here */
+.black4{
+    width: 100%;
+    height: 520px;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    padding-top: 60px;
+    padding-right: 120px;
+}
+.kids{
+    margin-top: 80px;
+}
+.black4 p{
+    font-size: 23px;
+}
+.children{
+    height: 400px;
+    width: 550px;
+}
+
+/* black box section5 starts here */
+.black5{
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+div[class*=net]{
+    width: 75%;
+    border: 1px solid rgb(48, 47, 47);
+    background-color: rgb(48, 47, 47);
+    font-size: 24px;
+    padding: 22px;
+    position: relative;
+}
+div[class*=answer]{
+    width: 75%;
+    background-color: rgb(48, 47, 47);
+    font-size: 24px;
+    padding: 24px;
+    display: none;
+}
+i[class*=plus]{
+    font-size: 35px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: block;
+}
+i[class*=xmark]{
+    font-size: 35px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+div[class*=net]:hover{
+    background-color: rgb(73, 72, 72);
+}
+.black5 h3{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* footer starts here */
+.black6{
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    font-size: 15px;
+    gap: 60px;
+    justify-content:left;
+    padding-top: 75px;
+    padding-left: 160px;
+    color: rgb(172, 169, 169);
+}
+div[class*=line]{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+#language1:hover{
+    outline: 2px solid white;
+}
+#language1{
+    height: 30px;
+    width: 120px;
+    background-color:transparent;            
+    border: 1px solid white;
+    font-weight: 800;
+    border-radius: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.black6 p{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.line4>p>a{
+    color: rgb(172, 169, 169);
+}
+.line4>p>a:active{
+    color: blueviolet;
+}

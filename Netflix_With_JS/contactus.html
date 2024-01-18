@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .nav{
+            height: 65px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            gap: 320px;
+            color: aliceblue;
+        }
+        .nav1{
+            display: flex;
+        }
+        .nav2{
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .nav img{
+            height: 50px;
+            width: 120px;
+            padding-top: 5px;
+        }
+        h5{
+            font-size: 19px;
+            padding-top: 18px;
+            font-weight: 500;
+        }
+        .button1:hover{
+            outline: 2px solid white;
+        }
+        .button1{
+            height: 35px;
+            width: 120px;
+            background-color:transparent;            
+            border: 1px solid rgb(145, 142, 142);
+            font-weight: 700;
+            border-radius: 10%;
+            color: aliceblue;
+            text-align: center;
+            padding:8px;
+        }
+        button{
+            height: 35px;
+            width: 70px;
+            color: aliceblue;
+            background-color: rgb(231, 22, 22);
+            border-radius: 15%;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            padding-left: 350px;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        .contact input{
+            height: 40px;
+            width: 70%;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+        .quick{
+            font-size: 15px;
+            color: rgb(107, 106, 106);
+            line-height: 50px;
+        }
+
+    @media (max-width:768px) {
+        
+        .contact{
+            padding-left: 180px;
+            gap: 14px;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 35px;
+        }
+        .contact input{
+            height: 32px;
+            width: 70%;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        .quick{
+            font-size: 16px;
+            line-height: 46px;
+        }
+    
+    }
+
+    @media (max-width:576px) {
+        .nav{
+            height: 55px;
+            gap: 180px;
+        }
+        h5{
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        .contact{
+            padding-left: 150px;
+            gap: 12px;
+            margin-top: 30px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .quick{
+            font-size: 15px;
+            line-height: 44px;
+        }
+    
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="nav1">
+            <img src="../Netflix/Image/Netflix-logo.png" alt="">
+            <h5>|&ThickSpace; Help Center</h5>
+            </div>
+            <div class="nav2">
+                <div class="button1">Join Netflix</div>
+                <button>Sign In</button>
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <h4>Tell us more and we'll find the best solution for you</h4>
+            <input type="text" placeholder="Describe your Issue">
+            <h4>Quick Links</h4>
+            <div class="quick">
+                <div><i class="fa-solid fa-circle-exclamation" style="color: #000000;"></i>&ThickSpace;Content Grievances in India</div><hr width="70%">
+                <div><i class="fa-solid fa-lock" style="color: #010204;"></i>&ThickSpace;Reset Password</div><hr width="70%">
+                <div><i class="fa-regular fa-envelope" style="color: #050506;"></i>&ThickSpace;Update email</div><hr width="70%">
+                <div><i class="fa-regular fa-circle-question" style="color: #000205;"></i>&ThickSpace;Get help signing In</div><hr width="70%">
+                <div><i class="fa-regular fa-credit-card" style="color: #000000;"></i>&ThickSpace;Update Payment Method</div><hr width="70%">
+                <div><i class="fa-solid fa-bullhorn" style="color: #030408;"></i>&ThickSpace;Request TV Shows or movies</div><hr width="70%">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@media (max-width:768px) {
+    
+    /* header starts here */
+    .p{
+        font-size: 40px;
+        padding: 20px 0 0 0 ;
+    }
+
+    /* black box section1 starts here */
+    .para{
+        margin-top: 70px;
+    }
+    .para p{
+        font-size: 23px;
+    }
+    video{
+        width:247px;
+        height:140px;
+        margin-top: 85px;
+        margin-left: 47px;
+    }
+
+    /* black box section2 starts here */
+    .black2{
+        height: 450px;
+    }
+    .mobile{
+        height: 300px;
+        width:200px;
+        margin-left: 100px;
+    }
+    .stranger{
+        height: 85px;
+        width: 220px;
+        gap: 0;
+        margin-left: -10px;
+        padding:0 0 0 140px;
+    }
+    .boxshot{
+        width: 75px;
+        height: 70px;
+    }
+    .download{
+        height: 45px;
+        width: 45px;
+    }
+
+    /* black box section3 starts here */
+    .black3{
+        height: 470px;
+    }
+    .black3 h1{
+        font-size: 36px;
+        position: absolute;
+        top: 170px;
+        left: 5px;
+    }
+    .black3 p{
+        font-size: 20px;
+        position: absolute;
+        top: 230px;
+        left: 5px;
+    }
+    #rajma{
+        height: 300px;
+        width: 450px;
+        right: -165px;
+    }
+    #chawal {
+        height: 260px;
+        width: 281px;
+        right: 77px;
+    }
+
+    /* black box section4 starts here */
+
+    .black4{
+        height: 480px;
+    }
+    .black4 h1{
+        top: 200px;
+        right: 25px;
+    }
+    .black4 p{
+        display: none;
+    }
+    .children{
+        height: 350px;
+        width: 470px;
+    }
+
+    /* black box section5 starts here */
+    .black5{
+        gap: 7px;
+    }
+    div[class*=net]{
+        font-size: 20px;
+        padding: 20px;
+    }
+    div[class*=answer]{
+        font-size: 20px;
+        padding: 20px;
+    }
+    i[class*=plus]{
+        font-size: 30px;
+    }
+    .black5 h3{
+        display: none;
+    }
+
+    /* footer starts here */
+
+    .black6{
+        gap: 30px;
+    }
+
+}
