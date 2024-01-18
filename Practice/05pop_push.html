@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Methods pop/push, shift/unshift</h2>
+    <h4>pop:</h4>
+    <p>pop takes an element from the end.</p>
+    <h4>push:</h4>
+    <p>push appends(adds) an element to the end of an Array</p>
+    <h4>shift</h4>
+    <p>Extracts(remove) the first element of the array and returns it</p>
+    <h4>unshift</h4>
+    <p>Add the element to the beginning of the array</p>
+
+    <script>
+        //pop ==> pop takes an element from the end
+        console.log(fruits.pop());      // remove "Papaya" 
+        console.log(fruits);            // Apple, Orange
+
+        //push ==> push adds an element to the end of an Array
+        fruits.push("Watermelon");
+        console.log(fruits);             // Apple, Orange,Watermelon
+    
+        //shift ==> remove the first element of the array and returns it
+        console.log(fruits.shift());    // remove Apple 
+        console.log(fruits);            // Orange, Watermelon
+    
+        //unshift ==> Add the element to the beginning of the array
+        fruits.unshift('Banana');
+        console.log(fruits);        // Banana, Orange, Watermelon
+    </script>
+</body>
+</html>

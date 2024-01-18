@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+    <style>
+        p{
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <p>&bullet; JavaScript operators are symbols that are used to perform operations on operands.</p>
+    <p>There are following types of operators in JavaScript.</p>
+    <ol>
+        <li>Arithmetic Operators</li>
+        <li>Comparison (Relational) Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Logical Operators</li>
+        <li>Assignment Operators</li>
+        <li>Special Operators</li>
+    </ol>
+    <h2>1.Arithmetic Operators:</h2>
+    <p>Arithmetic operators are used to perform arithmetic operations on the operands.
+        <br>The following operators are known as JavaScript arithmetic operators.</p>
+    <pre>
+        +	    Addition	                10+20 = 30
+        -	    Subtraction	                20-10 = 10
+        *	    Multiplication	        10*20 = 200
+        /	    Division	                20/10 = 2
+        %	    Modulus (Remainder)	        20%10 = 0
+        ++	    Increment	                var a=10; a++; Now a = 11
+        --	    Decrement	                var a=10; a--; Now a = 9
+    </pre>
+
+    <h2>2.Comparison (Relational) Operators:</h2>
+    <p>The JavaScript comparison operator compares the two operands. <br>
+        The comparison operators are as follows:</p>
+    <pre>
+        ==	        Is equal to	                        10==20 = false
+        ===	        Identical (equal & of same type)	10==20 = false
+        !=	        Not equal to	                        10!=20 = true
+        !==	        Not Identical	                        20!==20 = false
+        >	        Greater than	                        20>10 = true
+        >=	        Greater than or equal to	        20>=10 = true
+        &lt;	        Less than	                        20&lt;10 = false
+        &lt;=	        Less than or equal to	                20&lt;=10 = false
+    </pre>
+    <h2>3.Bitwise Operators</h2>
+    <p>The bitwise operators perform bitwise operations on operands. <br> The bitwise operators are as follows:</p>
+    <pre>
+        &	        Bitwise AND	                     (10==20 & 20==33) = false
+        |       	Bitwise OR	                     (10==20 | 20==33) = false
+        ^	        Bitwise XOR	                     (10==20 ^ 20==33) = false
+        ~       	Bitwise NOT	                     (~10) = -10
+        &lt;&lt;	        Bitwise Left Shift	             (10&lt;&lt;2) = 40
+        >>	        Bitwise Right Shift	             (10>>2) = 2
+        >>>     	Bitwise Right Shift with Zero	     (10>>>2) = 2
+    </pre>
+    <h2>4.Logical Operators</h2>
+    <p>The following operators are known as JavaScript logical operators.</p>
+    <pre>
+        &&	        Logical AND	                (10==20 && 20==33) = false
+        ||	        Logical OR	                (10==20 || 20==33) = false
+        !	        Logical Not	                !(10==20) = true
+    </pre>
+    <h2>5.Assignment Operators</h2>
+    <p>The following operators are known as JavaScript assignment operators.</p>
+    <pre>
+        =	        Assign	                        10+10 = 20
+        +=	        Add and assign	                var a=10; a+=20;    Now a = 30
+        -=	        Subtract and assign var         a=20; a-=10;        Now a = 10
+        *=	        Multiply and assign var         a=10; a*=20;        Now a = 200
+        /=	        Divide and assign var           a=10; a/=2;         Now a = 5
+        %=	        Modulus and assign var          a=10; a%=2;         Now a = 0
+    </pre>
+    <h2>6.Special Operators</h2>
+    <p>The following operators are known as JavaScript special operators.</p>
+    <pre>
+        (?:)	            Conditional Operator returns value based on the condition. It is like if-else.
+        ,	            Comma Operator allows multiple expressions to be evaluated as single statement.
+        delete	            Delete Operator deletes a property from the object.
+        in	            In Operator checks if object has the given property
+        instanceof	    checks if the object is an instance of given type
+        new	            creates an instance (object)
+        typeof	            checks the type of object.
+        void	            it discards the expression's return value.
+        yield	            checks what is returned in a generator by the generator's iterator.
+    </pre>
+    
+    
+    <script>
+        let a=10;               //we have assigned a value 10 to a
+        let b=20;               //we have assigned a value 20 to b
+        console.log(a+b);       //a and b are added
+        console.log(a-b);       //subtraction of a and b
+        console.log(a*b);       //multiplication of a and b
+        console.log(b/a);       //division of a and b
+
+        //post-increment of a variable
+        let c=10;
+        console.log(c++);       //log will remain 10 because it is a post-increment.value will be increase later
+        console.log(c);         //so here it will be 11
+
+        //pre-increment of a variable
+        let d=20;
+        console.log(++d);       //log will be 21 because increment has already happened.
+
+        //post-decrement of a variable
+        let e=30;
+        console.log(e--);       //log will remain 30 because it is post-decrement.value will be decrease later
+        console.log(e);         //so here it will be 29
+
+        //pre-decrement of a variable
+        let f=40;
+        console.log(--f);       //log will be 39 because decrement has already happened.
+
+
+        // let a=10;
+        // console.log(a++);       ==> post-Increment
+        // console.log(++a);       ==> pre-Increment
+        // console.log(a--);       ==> post-Decrement
+        // console.log(--a);       ==> pre-Decrement
+    </script>
+</body>
+</html>

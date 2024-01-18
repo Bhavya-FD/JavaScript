@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Data Types</title>
+    <style>
+        body {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript Data Types</h1>
+    <p>JavaScript provides different data types to hold different types of values. <br>
+        There are two types of data types in JavaScript.</p>
+    <ol type="A">
+        <li>Primitive data type</li>
+        <li>Non-Primitive data type</li>
+    </ol>
+    <h3>A. Premitive Data Type</h3>
+    <ol>
+        <li>Number</li>
+        <li>Null</li>
+        <li>String</li>
+        <li>Symbol</li>
+        <li>BigInt</li>
+        <li>Boolean</li>
+        <li>Undefined</li>
+    </ol>
+    <h3>1.Number</h3>
+    <p>represents numeric values e.g. 100 <br>
+    The number type represents both integer and floating point numbers.</p>
+
+    <h3>2.Null </h3>
+    <p>represents null i.e. no value at all</p>
+
+    <h3>3.String</h3>
+    <p>represents sequence of characters e.g. "hello" <br>
+    In JavaScript, there are 3 types of quotes.</p>
+    <p>Double quotes: "Hello".</p>
+    <p>Single quotes: 'Hello'.</p>
+    <p>Backticks: `Hello`.</p>
+
+    <h3>4.Symbol</h3>
+    <p>represent symbols</p>
+
+    <h3>5.BigInt</h3>
+    <p>represents big integers/numbers & ends with n</p>
+
+    <h3>6.Boolean</h3>
+    <p>represents boolean value i.e. either false or true</p>
+
+    <h3>7.Undefined</h3>
+    <p>represents undefined value(which is declared but not assigned any value)</p>
+
+    <h3>B. Non-Premitive Data Type</h3>
+    <ol>
+        <li>Array</li>
+        <li>Object</li>
+    </ol>
+    <h3>1.Array</h3>
+    <p>JavaScript array is an object that represents a collection of similar type of elements.</p>
+    <p>The syntax of creating array using array literal is given below: <br>
+        var arrayname=[value1,value2.....valueN];  </p>
+
+    <h3>2.Object</h3>
+    <p>A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.</p>
+    <p>object={property1:value1,property2:value2.....propertyN:valueN}  </p>
+
+    
+    <!-- javascript starts here -->
+    <script>
+        //these are the types of premetive data type
+
+        let a = 10;
+        a = 10.5  
+        console.log(a);
+        console.log(typeof a);       //this is a Number
+
+        let b = null;
+        console.log(b);
+        console.log(typeof b);      //this is a Null
+
+        let c = 'Bhavya'                    // String with Single qoutes
+        // let c = "Bhavya"                 // String with Double qoutes
+        // let c = "Hey I'm good"           // 
+        // let c = `Hey I'm a "good"`;      // String with BackTick i.e Template Literals
+        console.log(c);
+        console.log(typeof c);       //this is a String
+
+        let d = Symbol("$")
+        console.log(d);
+        console.log(typeof d);       //this is a Symbol
+
+        let e = 561156454512561654614546n
+        console.log(e);
+        console.log(typeof e);          //this is a Bigint
+
+        // let f= true          //A Boolean may be true or false
+        let f = false
+        console.log(f);
+        console.log(typeof f);      //this is a Boolean
+
+        let g;                       //when we declare a variable but don't assign a value to it. it is called undefined.
+        console.log(g);             // undefined
+        // console.log(h);          // Not defined  //when we didn't declare a variable it is called not defined.
+        console.log(typeof g);      //this is an Undefined value
+
+        // Example of Array
+
+        // Array elements are numbered, starting with zero.
+        //We can get an element by its number in square brackets
+
+        let fruits = ["Apple", "Orange", "Papaya"];
+        console.log(fruits);
+        console.log(fruits.length);     // 3
+        console.log(fruits[0]);         // Apple
+        console.log(fruits[1]);         // Orange
+        console.log(fruits[2]);         // Papaya
+    
+    
+        //Example of Object
+        let Userdetails = {
+        name: 'Bhavya',
+        age: 26,
+        fav_color: "gray"
+        }
+        console.log(Userdetails);
+        console.log(Userdetails.name);
+        console.log(Userdetails.age);
+        console.log(typeof Userdetails);
+        console.log(typeof Userdetails.name);
+        console.log(typeof Userdetails.age);
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+

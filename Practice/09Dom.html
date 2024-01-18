@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get HTML Data using JS(DOM)</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Get HTML Data using JS</h1>
+    <p>&bull; You use the DOM or Document Object Model which gives you access to
+         the HTML document by way of the document object.</p>
+    <p>&bull; All HTML elements are stored in the document, so every time we grab 
+        an HTML element from the DOM we start with document followed by the method.</p>
+    <h2>6 Ways To Access HTML Elements With JavaScript</h2>
+    <p>There are mainly 6 Ways To Access HTML Elements With JavaScript</p>
+    <p>The important methods of document object are as follows:</p>
+    <ol>
+        <li>getElementById("..")</li>
+        <li>getElementsByName("..")</li>
+        <li>getElementsByTagName("..")</li>
+        <li>getElementsByClassName("..")</li>
+        <li>querySelector("..")</li>
+        <li>querySelectorAll("..")</li>
+    </ol>
+    <pre>
+        getElementById():           returns the element having the given id value.
+        getElementsByName():        returns all the elements having the given name value.
+        getElementsByTagName():     returns all the elements having the given tag name.
+        getElementsByClassName():   returns all the elements having the given class name.
+    </pre>
+
+    <!-- Name to be print in input -->
+    <form name="form1" id="f1">
+    <input type="text" name="name" id="input" class="input1"/> <br><br>
+    <input type="text" name="name" class="input1"><br><br>     
+    <input type="button" onclick="printvalue()" value="printname"/>
+    </form>
+
+    <h3>Doubts</h3>
+    <p>querySelector and querySelectorAll</p>
+    <script>
+        // Document Object Model:  Accessing field value by document object.
+        // In this example, we are going to get the value of input text by user. 
+        // Here, we are using (document.form1.name.value) to get the value of name field.
+        // Here, (document) is the root element that represents the html document.
+        // form1 is the (name) of the form.
+        // (name) is the attribute name of the input text.
+        // (value) is the property, that returns the value of the input text.
+
+        //  Let's see the simple example of document object that prints name with welcome message.
+
+        function printvalue(){
+            // let name=document.form1.name.value;          //In this we are getting value directly
+            // alert("Welcome: " + name);
+            
+            
+            //1. getElementByID
+
+            // let name= document.getElementById('input').value;      //In this we get value directly from its ID
+            // alert("Welcome: " + name);
+            
+            
+            //2. getElementByName
+
+            // let name = document.getElementsByName('name')[0].value;    //In this we get value by name attribute which can be multiple
+            // let surname = document.getElementsByName('name')[1].value;   //this is another element having same name attribute
+            // alert("Welcome: " + name + surname);
+            
+
+            //3. getElementByTagName
+
+            // let name = document.getElementsByTagName('input')[0].value;     //In this we get value by Tagname 
+            // let surname = document.getElementsByTagName('input')[1].value;      //again using tagname that's why we have to use no.s to define a particular tag
+            // alert ("welcome: " + name + surname);
+
+
+            //4. getElementByClassName
+
+            let name = document.getElementsByClassName('input1')[0].value;   //In this we get value by classname [0] is the no. of element in the collection of multiple elements of similar classname.
+            let surname = document.getElementsByClassName('input1')[1].value;  //we can get multiple values by same classname.
+            alert("Welcome: " + name + surname + "How are u ?");
+
+            //5. querySelector
+
+            // document.querySelector('h1').style.backgroundColor = "red" ;
+
+            // 6. querySelectorAll
+
+            // let color = document.querySelectorAll('p').
+            // document.color[0].style.backgroundColor = "red" ;
+
+            
+
+
+        }
+    </script>
+</body>
+</html>

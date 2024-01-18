@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in JS</title>
+    <style>
+        body{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>variables in JS</h1>
+    <h2>Variables:</h2>
+    <p>A variable is a “named storage” for data. We can use variables to store goodies, <br> visitors, and other data.
+        To create a variable in JavaScript, use the let keyword.</p>
+    <p>We have two types of variables in JS and one constant</p>
+    <ol>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ol>
+    <h3>1. var</h3>
+    <p>var a;</p>  <!-- Declaration of a variable-->
+    <p>var a = 10; // Initialization and Declaration or Assignemnt</p> <!--Initialization or Assignment of a variable-->
+    <p>var a = 15;  // Re-Declaration is possible</p> <!--Re-Declaration of a variable-->
+    <p>a = 25;  // Re-Assignment is possible</p><!-- Re-Assignment of a variable-->
+    <p>console.log(a);</p>
+    <p>output: a = 25</p>
+
+    <h3>2. let</h3>
+    <p>let _a= 90 // Initialization and Declaration or Assignemnt</p>
+    <p>let _a = 40 // Re-Declaration is not possible</p>
+    <p>_a= 75  // Re-Assignemnt is Possible</p>
+    <p>console.log();</p>
+    <p>output: _a = 40</p>
+
+
+    <h3>3.Constants (const):</h3>
+    <p>To declare a constant (unchanging) variable, use const instead of let:</p>
+    <p>EXAMPLE:const myBirthday = '18.04.1982';</p>
+    <p>myBirthday = '01.01.2001'; // error, can't reassign the constant!</p>
+    <p>const COLOR_RED = "#F00";<br>
+       const COLOR_ORANGE = "#FF7F00";<br>
+       // ...when we need to pick a color<br>
+       let color = COLOR_ORANGE;<br>
+       alert(color); // #FF7F00</p>
+
+
+    <p>const fav_color = "Black"; // Initialization and Declaration or Assignemnt</p>
+    <p>const fav_color = "Red"  // Re-Declaration is not possible</p>
+    <p>fav_color = "Yellow"  // Re-Assignemnt is not possible</p>
+    <p>console.log(fav_color);</p>
+    <p>output: fav_color  = Black</p>
+
+    
+
+
+    <h4>There are some rules while declaring a JavaScript variable (also known as identifiers).</h4>
+    <ul>
+        <li>Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</li>
+        <li>After first letter we can use digits (0 to 9), for example value1.</li>
+        <li>JavaScript variables are case sensitive, for example x and X are different variables.</li>
+        <li>There is a list of reserved words, which cannot be used as variable names because they are used by the language itself. <br>
+            For example: let, class, return, and function are reserved.</li>
+    </ul>
+    <pre> 
+    Correct JavaScript variables: 
+    var x = 10;  
+    var _value="bhavya"; 
+    
+    Incorrect JavaScript variables:
+    var  123=30;  
+    var *aa=320;  
+
+    Example of JavaScript variable: 
+    var x = 10;  
+    var y = 20;  
+    var z=x+y;  
+    document.write(z);
+
+    </pre>
+
+    <h3>Use Strict</h3>
+    <p>we need to define a variable before using it. But in the old times,
+        it was technically possible to create a variable by a mere assignment of the value 
+        without using let. This still works now if we don’t put <b>"use strict"</b> in our 
+        scripts to maintain compatibility with old scripts.</p>
+    <pre>
+    num = 5; 
+    alert(num);
+    </pre>  
+    <p>the variable "num" is created if it didn't exist</p> 
+
+    <pre>
+    "use strict";
+    num = 5;
+    alert(num);
+    </pre>
+    <p>It will show 'error: num is not defined'</p>
+
+
+
+    <script>
+    num = 5;
+    console.log(num);     //it will return 5   //but if we apply 'use strict' mode then "error: num is not defined"
+    
+    var a;  // Declaration of a variable
+    var a = 10; // Initialization and Declaration or Assignemnt
+    var a = 15;  // Re-Declaration is possible
+    a = 25;  // Re-Assignment is possible
+    alert(a);       //25
+    
+    var x = 10;  
+    var y = 20;  
+    alert(z=x+y);       //30
+    
+    let _a= 90 // Initialization and Declaration or Assignemnt
+    // let _a = 40 // Re-Declaration is not possible
+    _a= 75  // Re-Assignemnt is Possible
+    alert(_a);     //75
+
+    const myBirthday = '18.04.1982';
+    myBirthday = '01.01.2001'; // error, can't reassign the constant!
+    alert(myBirthday);
+    
+    const COLOR_RED = "#F00";
+    const COLOR_ORANGE = "#FF7F00";
+    // ...when we need to pick a color
+    let color = COLOR_ORANGE;
+    console.log(COLOR_ORANGE); // #FF7F00
+    console.log(COLOR_RED);
+
+    const fav_color = "Black" // Initialization and Declaration or Assignemnt
+    // const fav_color = "Red"  // Re-Declaration is not possible
+    // fav_color = "Yellow"  // Re-Assignemnt is not possible
+    console.log(fav_color);
+
+    let user="Bhavya",
+    Age=26,
+    Course='FD';
+    console.log(user);
+    console.log(Age);
+    console.log(Course);
+    console.log(user,Age,Course);
+    </script>
+
+
+
+</body>
+</html>

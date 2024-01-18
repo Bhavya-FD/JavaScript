@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting in JS</title>
+    <style>
+        p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoisting in JS</h1>
+    <p>&bull; JavaScript Hoisting refers to the process whereby the interpreter appears
+        to move the declaration of functions, variables, classes, or imports to the
+        top of their scope, prior to execution of the code.</p>
+    <p>&bull; It allows us to call functions before even writing them in our code.</p>
+    <p>&bull; JavaScript only hoists declarations, not initializations.</p>
+    <p>&bull; Sequence of variable declaration: The following is the sequence in which
+        variable declaration and initialization occur. </p>
+    <pre>
+        let/const a;           // Declaration
+        a = 100;              // Assignment
+        console.log(a);      // Usage
+    </pre>
+    <p>While using var its different</p>
+    <pre>
+        a= 10;              //Assignment
+        console.log(a);    //Usage
+        var a;            //Declaration
+    </pre>
+    <h2>Host</h2>
+    <p>&bull; A host is a device connected to the Internet (or a local network). 
+        Some hosts called servers offer additional services like serving webpages or 
+        storing files and emails.</p>
+        
+    <script>
+        let a;                 // Declaration
+        a = 100;              // Assignment
+        console.log(a);      // Usage
+        
+    //While using var its different
+
+        b= 10;              //Assignment
+        console.log(b);    //Usage
+        var b;            //Declaration
+    </script>
+</body>
+</html>

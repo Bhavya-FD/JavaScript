@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in JS</title>
+</head>
+<body>
+    <script>
+        let a = 5.7;
+        let b = "something";
+        let c = '20';
+        let d = '12.00';
+        let x = new Date('12-22-2023');
+        console.log(a);
+        //typeof is to get type ofn an object
+        console.log(typeof a);      //number
+        console.log(b);
+        console.log(typeof b);      //string
+        console.log(a.toString());      //changed type number to string
+        // console.log(typeof toString(a));
+        console.log(typeof a.toString());       //string
+        
+        //NaN = Not a Number
+        console.log(isNaN(a));      //false
+        console.log(isNaN(b));      //true
+
+        //isFinite is to check Infinity
+        console.log(isFinite(a));               //true
+        console.log(isFinite(Infinity));        //false
+
+        //parseInt gives a Integer value
+        console.log(parseInt(a));           //it will change float value to integer
+        //parseFloat gives a Float value
+        console.log(parseFloat(a));         //change to float
+
+        console.log(Number(c));     //changes to string to number
+        console.log(Number(d));     //changes to string to number
+        console.log(x);
+        console.log(new Date);      //today's date and time get print
+    </script>
+</body>
+</html>

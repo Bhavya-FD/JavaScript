@@ -1,0 +1,1 @@
+alert("This is written In .js file (external javaScript)");

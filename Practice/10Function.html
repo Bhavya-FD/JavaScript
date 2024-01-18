@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Function</h1>
+    <p>&bull; A function is a group of reusable code which can be called anywhere in your
+        program. This eliminates the need of writing the same code again and again.</p>
+    <p>&bull; It helps programmers in writing modular codes. Functions allow a programmer to
+        divide a big program into a number of small and manageable functions.</p>
+    <p>&bull; We have seen functions like alert() and write().We were using these functions again and again, but they had been written in core
+        JavaScript only once.</p>
+    <p>&bull; JavaScript allows us to write our own functions as well</p>
+
+    <pre>
+        Syntax:
+            function functionname(parameter-list) {
+               statements to do Something
+            }
+    </pre>
+
+    <!-- this is a simple event using function -->
+    <form action="" method="get">
+    <input type="text" id="fullname" value=" "><br><br>
+    </form>
+    <button onclick="handleevent()" >Click Me!</button> 
+
+
+    <!-- return a value using function -->
+    <h2>JavaScript Functions</h2>
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+    <p id="demo"></p>
+
+    <script>
+        // onclick shows alert
+        function handleevent(){
+            let name = document.getElementById('fullname').value;
+            //write a function to be done onclick of the button 
+            alert('Hello! ' + name + ' Welcome to Our Page');
+            prompt('Write your Question here ');
+            
+        }
+
+        // this function returns a value using function
+        function myFunction(p1, p2){
+            return p1 * p2;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4,3);
+
+        
+    </script>
+</body>
+</html>

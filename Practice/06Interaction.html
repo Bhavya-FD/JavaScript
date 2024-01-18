@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction: alert, prompt, confirm</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interaction: alert, prompt, confirm</h1>
+    <h2>&bull; alert</h2>
+    <p>It shows a message and waits for the user to press “OK”</p>
+    <p>Syntax: alert("Hello!");</p>
+    <p>This will show a alert which says "Hello!"</p>
+    <a href="" onclick="showalert()">click here to show Alert</a>
+
+
+    <h2>&bull; Prompt</h2>
+    <p>The function prompt accepts two arguments <br>
+    It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel. <br>
+    It returns the text or, if Cancel button or Esc is clicked, null.</p>
+    <p>Syntax: prompt(title, [default]);</p>
+    <p>title: The text to show the visitor.</p>
+    <p>default: An optional second parameter, the initial value for the input field.</p>
+    <a href="" onclick="showprompt()">click here to show Prompt</a>
+
+
+    <h2>&bull; Confirm</h2>
+    <p>The function confirm shows a modal window with a question and two buttons: OK and Cancel. <br>
+        The result is true if OK is pressed and false otherwise.</p>
+    <p>Syntax: confirm(question);</p>
+    <a href="" onclick="showconfirm()">click here to show Confirm</a>
+    <br><br><br>
+
+
+
+    <script>
+        alert("welcome! to This page");
+
+        function showalert() {
+            alert("Hello!");
+        }
+
+        function showprompt() { 
+            let age = prompt('How old are you?', 100);  //100 is the value which will be shown by default
+            alert(`You are ${age} years old!`);     // You are 100 years old!
+        }
+
+        function showconfirm() {
+            confirm("Would you like to have coffee?");
+        }
+    </script>
+</body>
+</html>
