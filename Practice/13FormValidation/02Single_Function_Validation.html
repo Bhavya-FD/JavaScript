@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Function Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background: 
+                linear-gradient(
+                45deg,
+                #343702 0%,
+                #184500 20%,
+                #187546 30%,
+                #006782 40%,
+                #0b1284 50%,
+                #760ea1 60%,
+                #83096e 70%,
+                #840b2a 80%,
+                #b13e12 90%,
+                #e27412 100%
+                );
+            }
+            .registration{
+                width: 32%;
+                height: 500px;
+                margin: 60px auto;
+                background: #fff;
+                box-shadow: 5px 5px 20px #171818;
+                padding:20px 15px;
+                text-align: center;
+                font-size: 20px;
+                font-family: sans-serif;
+                color: lightseagreen;
+            }
+            label{
+                font-size: 18px;
+                color: #000;
+            }
+            input{
+                border: none;
+                border-bottom:2px solid rgb(39, 252, 199);
+                outline: none;
+                font-size: 18px;
+                position: relative;
+            }
+            h1{
+                font-size: 40px; 
+                font-family: Arial, Helvetica, sans-serif; 
+                background: linear-gradient(to right, #21adf3,#08eaff, #23cf9e, #d6ede3); 
+                -webkit-text-fill-color: transparent; 
+                -webkit-background-clip: text; 
+            }
+            .button-1{
+                align-items: center;
+                background-image: linear-gradient(135deg, #40b4f3 30%, #4dfcd9);
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 700;
+                height: 54px;
+                padding: 3px 20px;
+                margin-top: 30px;
+                text-transform: uppercase;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+            i{
+                color: #03b893;
+            }
+            span{
+                color: #800000;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            #show{
+                position: absolute;
+                opacity: 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="registration">
+    <h1>Registation Form</h1>
+    <label for="name">Name :</label>
+    <input type="text" name="name" id="name" onblur="handleValidation(this , 'error1' , 'Username')">
+    <br>
+    <span id="error1"></span>
+    <br><br>
+
+    <label for="email">Email :</label>
+    <input type="text" name="email" id="email" onblur="handleValidation(this , 'error2', 'Email id')">
+    <br>
+    <span id="error2"></span>
+    <br><br>
+
+    <label for="phone">Phone :</label>
+    <input type="tel" name="phone" id="phone" onblur="handleValidation(this , 'error3', 'Phone Number')">
+    <br>
+    <span id="error3"></span>
+    <br><br>
+
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password" onblur="handleValidation(this , 'error4', 'Password')">
+    <input type="checkbox" name="show" id="show" onclick="showpassword()">
+    <i class="fa-regular fa-eye"></i>
+    <br>
+    <span id="error4"></span>
+    <br><br>
+    <button class="button-1">Create Account</button>
+    </div>
+
+    <script>
+        function handleValidation(inpt , spnid , msg) {
+            // console.log(input);
+            // console.log(spnid); 
+            // console.log(msg);
+            if (inpt.value == '') {
+                document.getElementById(spnid).innerText = "*Please Enter valid " + msg ;
+            } else {
+                document.getElementById(spnid).innerText = " "
+            }
+        }
+
+        // Show Password
+        function showpassword() {
+            let password = document.getElementById('password').type
+            if (password === 'password') {
+                document.getElementById('password').type = 'text'
+            } else {
+                document.getElementById('password').type = 'password'
+            }
+        }
+    </script>
+
+</body>
+</html>
