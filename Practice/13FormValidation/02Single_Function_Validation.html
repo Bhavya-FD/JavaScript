@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Function Validation</title>
+    <!-- font awesome cdn is here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- google fonts link is here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <style>
         body {
             width: 100%;
@@ -50,11 +55,11 @@
                 position: relative;
             }
             h1{
-                font-size: 40px; 
-                font-family: Arial, Helvetica, sans-serif; 
+                font-size: 37px; 
+                font-family: 'Lemon', serif;
                 background: linear-gradient(to right, #21adf3,#08eaff, #23cf9e, #d6ede3); 
                 -webkit-text-fill-color: transparent; 
-                -webkit-background-clip: text; 
+                background-clip: text; 
             }
             .button-1{
                 align-items: center;
@@ -81,15 +86,11 @@
                 font-size: 15px;
                 margin-bottom: 20px;
             }
-            #show{
-                position: absolute;
-                opacity: 0;
-            }
     </style>
 </head>
 <body>
     <div class="registration">
-    <h1>Registation Form</h1>
+    <h1>Registration Form</h1>
     <label for="name">Name :</label>
     <input type="text" name="name" id="name" onblur="handleValidation(this , 'error1' , 'Username')">
     <br>
@@ -110,8 +111,7 @@
 
     <label for="password">Password :</label>
     <input type="password" name="password" id="password" onblur="handleValidation(this , 'error4', 'Password')">
-    <input type="checkbox" name="show" id="show" onclick="showpassword()">
-    <i class="fa-regular fa-eye"></i>
+    <i class="fa-regular fa-eye" onclick="showpassword()"></i>
     <br>
     <span id="error4"></span>
     <br><br>
@@ -119,10 +119,8 @@
     </div>
 
     <script>
+        // Form Validation using Single function in Javascript
         function handleValidation(inpt , spnid , msg) {
-            // console.log(input);
-            // console.log(spnid); 
-            // console.log(msg);
             if (inpt.value == '') {
                 document.getElementById(spnid).innerText = "*Please Enter valid " + msg ;
             } else {
