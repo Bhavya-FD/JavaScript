@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basic Logic Question</title>
+    <!-- Custom CSS -->
+    <style>
+        #h1{
+            color: rgb(67, 127, 130);
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 0px 0px 12px rgb(61, 106, 108),0px 0px 2px brown;
+        }
+        h2 button{
+            font-size: 30px;
+            background: teal;
+            color: blueviolet;
+        }
+        pre span{
+            background: cadetblue;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h1 id="h1">JS Basic Logic Question</h1>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Q.1&ThickSpace; What is JavaScript. How to use it? 
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is a case-sensitive language
+                that enables dynamic interactivity on websites when applied to an HTML document.
+                JavaScript is supportable in several operating systems including, Windows, macOS, etc.
+                Javascript example is easy to code. <br> JavaScript provides 3 places to put the
+                JavaScript code: <br>
+                1.within body tag <br> 2.within head tag <br>3.external JavaScript file.</div>
+          </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Q.2 &ThickSpace;How many type of Variable in JavaScript?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">There are three types of keywords for a variable declaration in JS: <br>    
+                1. var <br>
+                2. let <br>
+                3. const <br>
+                var x; const y; let z; Var - It is an outdated keyword in Javascript. </div>
+          </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Q.3 &ThickSpace;Define a Data Types in js?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">There are Mainly Two types of Data Types:
+              1. Premitive Data Type
+
+              2. Non-Premitive Data Type
+                                <!-- <pre class="mt-1">
+                                                <span>Data Type</span>
+                                                    |
+                                                    |
+                                ---------------------------------------------
+                                |                                           |
+                    <span>Premitive Data Type</span>             <span>Non-Premitive Data Type</span>
+                                |                                           |
+                                |-- <span>String</span>                             |-- <span>Array</span>
+                                |                                           |
+                                |-- <span>Number</span>                             |-- <span>Object</span>      
+                                |
+                                |-- <span>Boolean</span>
+                                |
+                                |-- <span>Undefined</span>
+                                |
+                                |-- <span>Null</span>
+                                |
+                                |-- <span>Symbol</span>
+                                |
+                                |-- <span>BigInt</span>
+
+                                </pre> -->
+            </div>
+          </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Q.4 &ThickSpace;What the difference between undefined and undeclare in JavaScript?
+            </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><b>Undefined:</b> It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. <br>
+                 <br> <b>Undeclared:</b> It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword.</div>
+            </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" onclick="printStatement()" >
+                Q.5 &ThickSpace;Using console.log() print out the following statement: The quote 'There is no exercise 
+                    better for the heart than reaching down and <br> &ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace; lifting people up.' by John Holmes teaches us to help one another.               
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Result is Printing out in Console.log()</div>
+            </div>
+        </div>
+        <!-- Question 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"></div>
+            </div>
+        </div>
+        <!-- Question 7 -->
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"></div>
+          </div>
+      </div> -->
+        <!-- Question 8 -->
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div> -->
+        
+    </div>
+
+      
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+      <!-- Custom JS -->
+      <script>
+        // printing Result from Q.5
+        function printStatement() {
+          let quote = "There is no exercise better for the heart than reaching down and lifting people up. by John Holmes teaches us to help one another."
+          console.log(quote);
+        }
+      </script>
+
+    </body>
+</html>
