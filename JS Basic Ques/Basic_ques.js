@@ -45,9 +45,131 @@ function printStatement() {
    
   // Q.11 Convert to Days & Years
   function convertToDays() {
-    let days = prompt('No. of days here: ')
-    
     let year = prompt('No. of years here: ')
-
+    let Days = year*365
+    // console.log(Days);
+    document.getElementById('spnid1').innerHTML = Days;
   }
-  
+  function convertToYears() {
+    let days = prompt('No. of days here: ')
+    let Year = days/365;
+    // console.log(Year);
+    document.getElementById('spnid2').innerHTML = Year;
+  }
+
+  // Q.12 Convert Farenhite to Celcius
+  function convertFtoC() {
+    let farenhite = prompt('Change Farenhite to Celcius: ')
+    let cel = `${farenhite}`-32;
+    let Celcius = `${cel}`*5/9;
+    // console.log(Celcius);
+    document.getElementById('spnid3').innerHTML = `${Celcius}deg C`
+  }
+
+  // Q.14 Check Expression
+  function checkExpression1() {
+    let check = 5 > 3 && 2 < 4;
+    console.log(5 > 3 && 2 < 4);
+    document.getElementById('answer1').innerHTML = check;
+  }
+
+  // Q.15 Check Expression
+  function checkExpression2() {
+    let check = true && 1 && "hello"
+    console.log(true && 1 && "hello");
+    document.getElementById('answer2').innerHTML = check;
+  }
+
+  // Q.16 Check Expression
+  function checkExpression3() {
+    let check = true && false || false && true
+    console.log(true && false || false && true);
+    document.getElementById('answer3').innerHTML = check;
+  }
+
+  //Q.20 function without void 0
+  function handleAlert1() {
+    alert('Namaste Bharat!')
+  }
+  // function with void 0
+  function handleAlert2() {
+    alert('This page says Hello!')
+  }
+
+  // Q.21 check Positive or Negetive
+  function checkPositive() {
+    let num = prompt('Check If Number is Positive or Negetive: ')
+    if (num < 0) {
+      alert(`${num} is a Negetive number.`)
+    } else {
+      alert(`${num} is a Positive number.`)
+    }
+  }
+
+  // Q.22 Find Vowel or not
+  function findVowel() {
+    let letter = prompt('Write a Character here: ');
+    let vowel = `${letter}`;
+    if (vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u') {
+      alert('This is a Vowel.');
+    }else {
+      alert('This is not a Vowel.');
+    }
+  }
+
+  // Q.23 check Positive or Negetive
+  function checkPositiveOrNegetive() {
+    let num = prompt('Check If Number is Positive or Negetive: ')
+    if (num < 0) {
+      alert(`${num} is a Negetive number.`)
+    }else if (num == 0) {
+        alert(`${num} is a Zero.`)
+    } else {
+      alert(`${num} is a Positive number.`)
+    }
+  }
+
+  // Q.24 find number is Even or Odd
+  function findEvenOdd(n) {
+    // n % 2 is used to get remainder of a division  
+    return (n % 2 == 0);
+  }
+  let n = 10;
+  // here we find no. is Even or Odd using ternary Operator
+  findEvenOdd(n) ? console.log("Even") : console.log("Odd");
+          // or 
+  // function findEvenOdd() {
+  //   let n = prompt('write a no.: ')
+  //   if (n % 2 == 0) {
+  //     alert('Even')
+  //   } else {
+  //     alert('Odd')
+  //   }
+  // }
+
+  // Q.25 Maximum number
+  function isMax(num1,num2,num3) {
+    return num1 >= num2 && num1 >= num3 ? num1
+          : num2 >= num1 && num2 >= num3 ? num2
+          : num3
+          // console.log(Math.max(20,30,10));
+  }
+  const maxValue = isMax(10,20,30);
+  console.log("Maximum no. is: " , maxValue);
+    
+  // Q.26 Minimum  Number 
+  function isMin(no1,no2,no3) {
+    return no1 <= no2 && no1 <= no3 ? no1
+        :no2 <= no1 && no2 <= no3 ? no2
+        : no3
+    // console.log(Math.min(20,10,30));
+  }
+  const Minimum = isMin(10,20,30)
+  console.log("Minimum No. is: " , Minimum);
+
+  // Q.27 find Largest no.
+  function isLargest() {
+    console.log('Largest no. is:' , Math.max(20,30,10));
+  }
+
+

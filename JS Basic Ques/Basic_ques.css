@@ -21,3 +21,9 @@ pre span{
     font-size: 20px;
     border-radius: 5px;
 }
+.spn{
+    border: 1px solid black;
+    background-color: bisque;
+    margin-left: 20px;
+    padding: 10px 70px;
+}
