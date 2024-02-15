@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Revision Q&A</title>
+    <!-- Custom CSS -->
+    <style>
+        p{
+            font-size: 19px;
+        }
+        .card-header{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        table{
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Javascript Revision Q&A</h1>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Q.1. Can you provide a brief overview of the history of JavaScript and its significance in web development?</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p><b>History:-</b> Brendan Eich created JavaScript in 1995, originally designed for Netscape 2. 
+                    It later became the ECMA-262 standard in 1997. Following Netscape's transfer 
+                    of JavaScript to ECMA, the Mozilla Foundation took over its development for 
+                    the Firefox browser, with the latest version being 1.8.5. <br>
+                <b>Significance of JS:-</b>JavaScript (JS) is a cross-platform, 
+                object-oriented programming language used by developers to make web pages interactive. 
+                It allows developers to create dynamically updating content, use animations, pop-up menus, 
+                clickable buttons, control multimedia, etc.
+                </p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question2 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Q.2. What are the fundamental building blocks of JavaScript? </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>The fundamentals of JavaScript are the building blocks of the language. 
+                    These include variables, data types, control structures, functions, and objects. 
+                    Understanding these fundamentals is crucial for anyone looking to become proficient 
+                    in JavaScript programming.</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question3 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Q.3. Explain the basic syntax of JavaScript.</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>The syntax of JavaScript is the set of rules defining valid programming statements. 
+                    Javascript's syntax is similar to C and Java: it is case-sensitive, statements end with 
+                    semicolons, and curly braces are used to mark blocks of code.</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question4 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Q.4. How does JavaScript differ from other programming languages?</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>JavaScript is an object-oriented programming language. This means that code written in 
+                    JavaScript is made up of objects that contain data and functions. These objects can be 
+                    manipulated and used to create complex programs.Most programming languages are compiled, 
+                    meaning that the code must be compiled into machine code before it can be run. 
+                    On the other hand, JavaScript is an interpreted language, meaning that it does not need 
+                    to be compiled before it can be run. This makes JavaScript easier to work with.</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question5 -->
+        <div class="card mb-3 ">
+            <div class="card-header bg-success text-light">Q.5. What are the best practices to write clean and efficient JavaScript code?</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>1. Clean code is a term used to describe computer code that is easy to read, understand, and maintain. 
+                    Clean code is written in a way that makes it simple, concise, and expressive. <br>
+                    2. Clean coding means that in the first place you write code for your later self and for your co-workers and not for the machine. <br>
+                    3. Use intention-revealing names and don't worry if you have long variable names. <br>
+                    4. Using consistent formatting and syntax throughout a codebase is an important aspect of writing clean code.
+                </p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question6 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Q.6. What are the differences between var, let, and const in JavaScript for declaring variables?</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <table class="border border-2 border-dark">
+                    <tr class="border border-2 border-dark">
+                        <th class="border border-1 border-dark">var</th>
+                        <th class="border border-1 border-dark">let</th>
+                        <th>const</th>
+                    </tr>
+                    <tr class="border border-2 border-dark">
+                        <td class="border border-1 border-dark">var was the primary way to declare variables in JavaScript.</td>
+                        <td class="border border-1 border-dark">let was introduced in ECMAScript 6 (ES6) to address some of the issues with var.</td>
+                        <td>const is also introduced in ES6 and stands for "constant." Variables declared with const are block-scoped, just like let</td>
+                    </tr>
+                    <tr class="border border-2 border-dark">
+                        <td class="border border-1 border-dark">Re-Declaration and Re-Assignment is possible in var.</td>
+                        <td class="border border-1 border-dark">Re-Declaration is not possible but Re-Assignemnt is Possible in let.</td>
+                        <td>Re-Declaration and Re-Assignemnt is not possible in const.</td>
+                    </tr>
+                    <tr class="border border-2 border-dark">
+                        <td class="border border-1 border-dark">var has a Global scope, so it is accessible both inside and outside the block.</td>
+                        <td class="border border-1 border-dark">let has block scope, which means it is only accessible within the block it's declared in</td>
+                        <td>It is also block-scoped like let. </td>
+                    </tr>
+                </table>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+        <!-- Question1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-light">Question</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Answer</p>
+              </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
