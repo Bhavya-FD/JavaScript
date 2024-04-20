@@ -2,7 +2,7 @@
 function printStatement() {
     let quote = "There is no exercise better for the heart than reaching down and lifting people up. by John Holmes teaches us to help one another."
     console.log(quote);
-  }
+}
 
   //Q.6 Make it exactly equal 
   function handleEvent() {
@@ -10,8 +10,7 @@ function printStatement() {
     let b = 10
     console.log(typeof a);
     console.log(typeof b);
-    console.log(typeof parseInt(a));
-    console.log(a === b);
+    // Type of a != b
     console.log(parseInt(a) === b);
   }
 
@@ -29,7 +28,7 @@ function printStatement() {
   // function getDays() {
   //   // today's date
   //   let today = new Date();
-  //   // year of current date
+  //  // year of current date
   //   let ChristmasYear = today.getFullYear();
   //   console.log(today);
   //   console.log(ChristmasYear);
@@ -40,21 +39,21 @@ function printStatement() {
     const side = prompt('Enter the Side of a Square: ')
 
     const C = 4 * side;
-    console.log(C);
+    alert(C);
   }
    
   // Q.11 Convert to Days & Years
   function convertToDays() {
-    let year = prompt('No. of years here: ')
+    let year = prompt('No. of years here: ');
     let Days = year*365
-    // console.log(Days);
     document.getElementById('spnid1').innerHTML = Days;
+    // alert("No. of Days : " + Days)
   }
   function convertToYears() {
-    let days = prompt('No. of days here: ')
+    let days = prompt('No. of days here: ');
     let Year = days/365;
-    // console.log(Year);
     document.getElementById('spnid2').innerHTML = Year;
+    // alert("No. of years : " + Year)
   }
 
   // Q.12 Convert Farenhite to Celcius
@@ -70,7 +69,8 @@ function printStatement() {
   function checkExpression1() {
     let check = 5 > 3 && 2 < 4;
     console.log(5 > 3 && 2 < 4);
-    document.getElementById('answer1').innerHTML = check;
+    // document.getElementById('answer1').innerHTML = check;
+    alert(check);
   }
 
   // Q.15 Check Expression
@@ -84,7 +84,8 @@ function printStatement() {
   function checkExpression3() {
     let check = true && false || false && true
     console.log(true && false || false && true);
-    document.getElementById('answer3').innerHTML = check;
+    // document.getElementById('answer3').innerHTML = check;
+    alert(check);
   }
 
   //Q.20 function without void 0
