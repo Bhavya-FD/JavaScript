@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+div[class*='box']{
+    border: 1px solid rgb(203, 201, 201);
+    width: 25%;
+    padding: 10px;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.container{
+    margin-top: 50px;
+}
+.box2>p{
+    font-size: 14px;
+    margin: 10px;
+}
+.box1>img{
+    width: 60%;
+    padding: 5px 0;
+}
+.box1>p{
+    font-size: 14px;
+}
+#username,#password{
+    width: 85%;
+    padding: 10px;
+    background: rgba(233, 231, 231, 0.353);
+    border: 1px solid  rgb(224, 222, 222);
+    font-size: 12px;
+    position: relative;
+}
+#btn{
+    background-color: #508bf2;
+    padding:9px 110px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+img{
+    width: 40%;
+}
+a+p{
+    font-size: 12px;
+}
+p>a{
+    color: #508bf2;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+hr{
+    width: 100px;
+}
+.hr{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+}
+.apps{
+    width: 25%;
+    margin: 10px auto;
+    text-align: center;
+}
+.facebook{
+    display: inline;
+    gap: 5px;
+    padding: 5px 0;
+}
+#microsoft{
+    width: 32%;
+    margin-left: 10px;
+}
+.box2+p{
+    text-align: center;
+}
+.showpass{
+    color: rgb(151, 2, 32);
+    font-size: 13px;
+}
+
+input:focus::placeholder{
+    position: absolute;
+    font-size: 11px;
+    transform: translatey(-10px);
+}

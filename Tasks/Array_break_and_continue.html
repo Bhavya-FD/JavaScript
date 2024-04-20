@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Break and Continue</title>
+</head>
+<body>
+    <h2>Array Break and Continue</h2>
+    
+    <script>
+        for (let a = 0; a < 10; a++) {
+            if (a === 3) {
+                continue;           //The continue statement "jumps over" one iteration in the loop.
+            }
+            if (a === 8) {
+                break;              //The break statement "jumps out" of a loop.
+            }
+            document.write("The number is " + a + "<br>");
+        }
+    </script>
+</body>
+</html>

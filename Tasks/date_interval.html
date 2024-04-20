@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Interval</title>
+    <style>
+        input,label{
+            font-size: 20px;
+        }
+        button{
+            background-color: rgb(45, 45, 249);
+            font-size: 20px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date Interval</h1>
+    <label for="from">From :</label>
+    <input type="date" name="from" id="from">
+    <br><br>
+    <label for="to">To :</label>
+    <input type="date" name="to" id="to">
+    <br><br>
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="box">
+        <h2>Date Interval Between :</h2>
+        <span id="spn1"></span>
+        <span id="spn1"></span>
+        <span id="spn1"></span>
+        <span id="spn1"></span>
+    </div>
+
+    <script>
+        function calculate(){
+            
+            let a = document.getElementById('from').value;
+            let b = document.getElementById('to').value;
+            
+            let c = a-b;
+        }
+    </script>
+</body>
+</html>

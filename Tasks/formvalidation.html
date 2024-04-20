@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation in Javascript</title>
+    <style>
+        body{
+            height: 83vh;
+            background: linear-gradient(150deg,rgb(77, 218, 218) 30%,tan 70%);
+        }
+        form{
+            border: none;
+            border-radius: 15px;
+            box-shadow: rgb(43, 43, 83) 0 0  15px,rgb(159, 159, 197) 0 0  20px,inset 0 0 20px rgb(86, 86, 195);
+            text-align: center;
+            width: 30%;
+            margin: 100px auto;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgb(160, 160, 248);
+        }
+        input,textarea{
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #submit{
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            color: aliceblue;
+            font-weight: 700;
+            box-shadow: rgb(130, 9, 29) 3px 3px 10px;
+            border: transparent;
+            background-color: rgb(252, 152, 168);
+        }
+        span{
+            color: rgb(178, 2, 2);
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" onsubmit="submitForm()">
+    <label for="username">User Name:</label>
+    <input type="text" name="username" id="username" onblur="blurfunction1()">
+    <br>
+    <span id="error1"></span>
+    <br>
+    <label for="userpass">User Password:</label>
+    <input type="password" name="userpass" id="userpass" onblur="blurfunction2()" >
+    <br>
+    <input type="checkbox" name="showpass" id="showpass" onclick="handlevisibility()">
+    <span>Show Password</span>
+    <br>
+    <span id="error2"></span>
+    <br>
+    <label for="number">Phone No.:</label>
+    <input type="tel" name="number" id="number" onblur="blurfunction3()">
+    <br>
+    <span id="error3"></span>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" onblur="blurfunction4()">
+    <br>
+    <span id="error4"></span>
+    <br>
+    <label for="address" >Address:</label>
+    <textarea name="address" id="address" cols="25" rows="3" onblur="blurfunction5()"></textarea>
+    <br>
+    <span id="error5"></span>
+    <br>
+
+    <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <script>
+        // this function is for username validation
+        function blurfunction1() {
+            let name = document.getElementById('username').value;
+            if (name === "") {
+                document.getElementById('error1').innerHTML = "*Please Enter Username"
+            } else {
+                document.getElementById('error1').innerHTML = ""
+            }
+        }
+        //this function is for userpassword validation
+        function blurfunction2() {
+            let pass = document.getElementById('userpass').value;
+            if (pass === "") {
+                document.getElementById('error2').innerHTML = "*Please Enter valid Password"
+            } else {
+                document.getElementById('error2').innerHTML = ""
+            }
+        }
+        //this function is to change password to text
+        function handlevisibility() {
+            let a = document.getElementById('userpass');
+            if (a.type === 'password') {
+                a.type = 'text'
+            } else {
+                a.type = 'password'
+            }
+        }
+        //this function is for phone no. validation
+        function blurfunction3() {
+            let num = document.getElementById('number').value;
+            if (num === "") {
+                document.getElementById('error3').innerHTML = "*Please Enter Phone no."                
+            } else {
+                document.getElementById('error3').innerHTML = ""
+            }            
+        }
+        //this function is for Email validation
+        function blurfunction4() {
+            let email = document.getElementById('email').value;
+            if (email === "") {
+                document.getElementById('error4').innerHTML = "*Please Enter valid Email Id"
+            } else {
+                document.getElementById('error4').innerHTML = "";
+            }
+        }
+        //this function is for Address validation
+        function blurfunction5() {
+            let address = document.getElementById('address').value;
+            if (address === "") {
+                document.getElementById('error5').innerHTML = "*Please Enter your Address here"
+            } else {
+                document.getElementById('error5').innerHTML = "";
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0 150px;
+        }
+        .bigbox{
+            text-align: center;
+            margin: 150px;
+        }
+        div{
+            border: 5px solid black;
+            font-size: 25px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .operation{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        label,input,button{
+            border: 2px solid black;
+            font-size: 20px;
+            margin: 10px;
+            padding: 15px 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box">
+        <label for="first">first num</label>
+        <input type="number" name="first" id="first" >
+        <label for="second">second num</label>
+        <input type="number" name="second" id="second" >
+        </div>
+        <div class="operation">
+        <button class="operator" onclick="handleEvent()" id="add">Add +</button>
+        <button class="operator" onclick="handleEvent()" id="subtract">Subtract -</button>
+        <button class="operator" onclick="handleEvent()" id="multiply">Multiply *</button>
+        <button class="operator" onclick="handleEvent()" id="divide">Divide /</button>
+        </div>
+        <div class="result">result</div>
+    </div>
+    <script>
+        let a =document.getElementById('first');
+        let b =document.getElementById('second');
+        function handleEvent() {
+            document.getElementById('add').add = 'a+b';
+            console.log('a+b');
+        }
+    </script>
+</body>
+</html>

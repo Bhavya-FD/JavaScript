@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Function Validation</title>
+</head>
+<body>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" onblur="handleevent(this, 'error1' ,'User Name')">
+    <span id="error1"></span>
+    <br><br>
+    <label for="userpass">User Password:</label>
+    <input type="text" name="userpass" id="userpass" onblur="handleevent(this, 'error2' , 'User password')">
+    <span id="error2"></span>
+    <br><br>
+    <label for="usernum">User Phone no.:</label>
+    <input type="text" name="usernum" id="usernum" onblur="handleevent(this, 'error3' , 'User Phone no.')">
+    <span id="error3"></span>
+    <br><br>
+    <label for="useremail">User Email:</label>
+    <input type="text" name="useremail" id="useremail" onblur="handleevent(this, 'error4' , 'User Email')">
+    <span id="error4"></span>
+    
+
+    <script>
+        //here we are using parameteres
+        //Here; this = a , 'error1/2/3/4' = b , 'User Name = c' 
+        function handleevent(a,b,c) {
+            // console.log(a);
+            if (a.value == '') {
+                // console.log('Enter valid Username');
+                document.getElementById(b).innerText = "*Please Enter valid " + c ;
+            } else {
+                document.getElementById(b).innerText = " "
+            }
+        }
+    </script>
+</body>
+</html>

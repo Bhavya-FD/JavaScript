@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 90vh;
+            width: 100%;
+            position: relative;
+        }
+        button{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: aqua;
+            position: absolute;
+        }
+        #btn1{
+            top: 600px;
+            left: 500px;
+        }
+        #btn2{
+            top: 600px;
+            left: 550px
+        }
+        #btn3{
+            top: 600px;
+            left: 600px
+        }
+        #btn4{
+            top: 600px;
+            left: 650px
+        }
+
+    </style>
+</head>
+<body>
+    <img src="../../CSS/Images/pngwing.com (2).png" id="bannerimage" alt=""> <br>
+    <button id="btn1" onclick="changeimage('../../CSS/Images/pngwing.com (1).png')"></button>
+    <button id="btn2" onclick="changeimage('../../CSS/Images/pngwing.com (3).png')"></button>
+    <button id="btn3" onclick="changeimage('../../CSS/Images/pngwing.com (4).png')"></button>
+    <button id="btn4" onclick="changeimage('../../CSS/Images/pngwing.com (5).png')"></button>
+
+    <script>
+        function changeimage(filename) {
+            let img = document.querySelector('#bannerimage');
+            img.setAttribute('src',filename);  
+        }
+    </script>
+</body>
+</html>

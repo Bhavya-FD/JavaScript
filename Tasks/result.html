@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" method="get"><br> -->
+    <input type="text" name="number" id="marks"><br><br>
+    <input type="submit" onclick="handleEvent()" >
+    <!-- </form> -->
+
+    <script>
+        function handleEvent() {
+        let a = document.getElementById(marks);
+        // console.log(a);
+        if(a.value < 33){
+            alert('Pass');
+        // } else if (a>=51){
+        //     alert('Third grade');
+        // } else if(a>=61){
+        //     alert('Second grade');
+        // }else if(a>=71){
+        //     alert('First grade');
+        // }else if(a>=81){
+        //     alert('Distinction');
+        // }else if(a>=91){
+        //     alert('Very Good');
+        // }else if(a=100){
+        //     alert('Very Good');
+        }else{
+            alert('Try Again');
+        }
+    }
+    </script>
+</body>
+</html>

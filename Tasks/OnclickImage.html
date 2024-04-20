@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            margin: 0 auto;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background: url(../../CSS/Images/cascade-boat-clean-china-natural-rural.jpg) no-repeat center center/cover;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            background-color: blueviolet;
+            font-size: 20px;
+            margin-left: 620px;
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="image1"></div>
+    <button onclick="changeimage()" id="button">Click me</button>
+
+    <script>
+        function changeimage() {
+            document.getElementById('image1').style.backgroundImage = "url(../../CSS/Images/flower.jpg)"
+        }
+    </script>
+</body>
+</html>

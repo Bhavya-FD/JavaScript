@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            font-size: 25px;
+            background-color: blueviolet;
+            border-radius: 20%;
+            box-shadow: purple 3px 3px 3px;
+            padding: 10px;
+            color: rgb(239, 114, 114);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Our Restaurant</h1>
+    <button onclick="handleevent()">Click here to Place Order</button>
+    <script>
+    function handleevent() {
+        alert('Welcome!')
+        let x=confirm('Do you want Coffee?')
+        if (x==true){
+        let y=confirm('you want Cookies?')
+        if (y==true){
+            alert('you pressed OK')
+        }
+        if (y==false){
+            alert('you pressed CANCLE')
+        }
+        }
+        else{
+        let z=confirm('You want anything else?')
+        if (z==true){
+        let a=confirm('cold Drinks?')  
+        if (a==true){
+            alert('you pressed OK')
+        } 
+        if (a==false){
+            prompt('Give your Order here')
+        } 
+        }
+        }
+    }
+    </script>
+</body>
+</html>

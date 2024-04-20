@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Converter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            border: 10px ridge rgb(1, 1, 42);
+            height: 100vh;
+            background: rgba(165, 42, 42, 0.721);
+        }
+        input{
+            font-size: 30px;
+            margin: 50px;
+            background:wheat;
+            padding: 15px 80px;
+            border-radius: 10px;
+            border: 3px ridge black;
+        }
+        button{
+            font-size: 25px;
+            padding: 20px 25px;
+            border: 5px inset rgb(2, 114, 114);
+            background: rgba(1, 148, 148, 0.632);
+            border-radius: 20px;
+            color: rgb(245, 245, 239);
+            margin: 30px 15px;
+            box-shadow: 4px 4px 2px rgb(38, 222, 222) ;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" name="text" placeholder="Enter your Text Here"><br><br>
+
+        <button id="uppercase" onclick="uppercase()">Uppercase</button>
+        <button id="lowercase" onclick="lowercase()">Lowercase</button>
+        <button id="char" onclick="charcount()">Character Count</button><br>
+        <button id="trim" onclick="trim()">Trim</button>
+        <button id="word" onclick="wordcount()">Word Count</button>
+        <button id="space" onclick="space()">Space Remove</button><br>
+        <button id="clear" onclick="clear()">Clear</button>
+        <button id="fandr" onclick="findnreplace()">Find & Replace</button>
+        
+
+    </div>
+
+    <script>
+        function uppercase(){
+            let a = document.getElementById('text').value;
+                // document.getElementById('text').style.textTransform = 'uppercase'
+                a = a.toUpperCase();
+            // console.log(a.toUpperCase());
+        }
+
+        function lowercase(){
+            let a = document.getElementById('text').value;
+            
+        }
+
+        function charcount(){
+            let a = document.getElementById('text').value;
+            
+        }
+
+        function trim(){
+            let a = document.getElementById('text').value;
+            
+        }
+        
+        function wordcount(){
+            let a = document.getElementById('text').value;
+            
+        }
+
+        function space(){
+            let a = document.getElementById('text').value;
+            
+        }
+
+        function clear(){
+            let a = document.getElementById('text').value;
+            
+        }
+
+        function findnreplace(){
+            
+        }
+
+
+    </script>
+
+
+</body>
+</html>
